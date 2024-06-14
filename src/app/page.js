@@ -97,7 +97,7 @@ export default function Home() {
       </section>
 
       {/* Footer Nav menu */}
-      <section className="fixed bottom-[65px] bg-sd-red rounded-tl-[10px] rounded-tr-[10px] w-mobile h-[55px] px-12 py-3">
+      <section className="sticky bottom-0 bg-sd-red rounded-tl-[10px] rounded-tr-[10px] w-mobile h-[55px] px-12 py-3">
         <FooterNav />
       </section>
     </>
