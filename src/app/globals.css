@@ -3,31 +3,49 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+  --foreground-rgb: #201925;
+  --background-rgb: 255, 251, 244;
+  --sd-red: 185, 39, 40;
+  --sd-white: 254, 245, 229;
+  --sd-menu-t-active-white: 255, 229, 220;
+  --sd-menu-t-inactive-gray: 159, 159, 159;
+  --sd-bt-text-white: 250, 246, 255;
+  --sd-bt-text-gray: 45, 33, 33;
+  --sd-yellow: 255, 192, 36;
+  --sd-progress-yellow: 255, 188, 60;
+  --sd-search-text-gray: 105, 105, 105;
+  --sd-t-black: 32, 25, 37;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+  --sd-shadow-1: 0, 0, 0;
 }
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: rgb(var(--background-rgb));
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  height: 5px
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgb(var(--sd-menu-t-active-white));
+  border-radius: 10px;
+  width: 0px;
+  height: 5px
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(var(--background-rgb));
+  border-radius: 10px;
+  width: 0px;
+  height: 5px
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rbg(var(--sd-bt-text-gray));
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
 }
