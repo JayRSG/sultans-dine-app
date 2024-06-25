@@ -41,6 +41,12 @@ module.exports = {
         offers: "0px 4px 15px 0px rgba(0, 0, 0, 0.25)",
         "option-outline": "0px 4px 4px rgba(0, 0, 0, 0.25)",
         popular: "0px 5px 15px 2px rgba(0, 0, 0, 0.25)",
+        order_summary: "5px 5px 15px 5px rgba(32, 25, 37, 0.25)",
+        button: "5px 5px 15px 5px rgba(0, 0, 0, 0.25)",
+      },
+
+      fontSize: {
+        md: "16px",
       },
     },
   },
